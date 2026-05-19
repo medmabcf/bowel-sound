@@ -1,0 +1,24 @@
+# Ignore everything by default
+*
+
+# ── Unignore only the files we want ─────────────────────────────────
+!.gitignore
+!exp13_distilhubert_as1val.ipynb
+!exp14_wavlm_as1val.ipynb
+!exp00_data_analysis.ipynb
+!bowel_sound_final_report.docx
+!requirements.txt
+!README.md
+!.env.example
+!bowel-data/
+!bowel-data/*
+
+# ── But still exclude secrets and binaries from bowel-data ───────────
+.env
+*.env
+*.pt
+*.pth
+__pycache__/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.venv/
